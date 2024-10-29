@@ -1,1 +1,59 @@
+.ruslan-display-regular {
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.tilt-warp{
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
 
+body{
+  margin: 0;
+  border: 0;
+}
+
+.cabecera{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Titulo{
+  align-content: center;
+  width: 113%;
+}
+.Nombre_Pagina{
+  align-content: center;
+  font-size: 8vw;
+  font-family: "Ruslan Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+.MenuIcono{
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  height: 100%;
+}
+.iconMenu{
+  width: 65%;
+  align-content: center;
+}
+.sepaCabCont{
+  width: 100%;
+  align-content: center;
+}
+.sepaCabCont .linea{
+  background-color: black;
+  width: 80%;
+  height: 2px;
+}
