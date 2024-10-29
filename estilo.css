@@ -59,3 +59,33 @@ body{
   height: 2px;
   margin: auto;
 }
+
+
+
+.content{
+  display: grid;
+}
+
+.first_pueblo{
+
+}
+.Nombre_pueblo{
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+  color: #B51BFD;
+  font-size: 6vw;
+  text-align: center;
+}
+.img_pueblo{
+  width: 100%;
+  align-content: center;
+}
+.img_pueblo img{
+  width: 60%;
+  height: 20%;
+}
