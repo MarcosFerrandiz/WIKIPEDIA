@@ -17,7 +17,7 @@ body{
   margin: 0;
   border: 0;
 }
-
+/*
 .cabecera{
   width: 100%;
   background-color: white;
@@ -26,10 +26,10 @@ body{
   grid-template-columns: repeat(2, auto);
   gap: 5px;
 }
-
+*/
 .Titulo{
   align-content: center;
-  width: 113%;
+  width: 100%;
 }
 .Nombre_Pagina{
   color: #691590;
@@ -41,22 +41,79 @@ body{
   margin-left: 4%;
 }  
 
-.MenuIcono{
-  display: flex;
-  justify-content: end;
-  align-content: center;
-  height: 100%;
+
+
+
+.cabecera *{
+  margin: 0;
+  padding: 0;
 }
-.iconMenu{
+.cabecera{
+  background-color: white;
+  height: 48px;
+  padding: 10px 12px;
+  position: fixed;
+  transition: 250ms;
+  width: 94%;
+}
+.cabecera .checkbox, .icons{
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+.icons{
+  pointer-events: none;
+  font-size: 24px;
+}
+.checkbox{
+  opacity: 0;
+}
+.fi-br-cross{
+  display: none;
+}
+.checkbox:checked ~ .fi-br-menu-burger{
+  display: none;
+}
+.checkbox:checked ~ .fi-br-cross{
+  display: block;
+}
+.menu{
   width: 65%;
-  align-content: center;
-  margin-right: 5%;
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  display: none;
 }
+.menu li{
+  list-style: none;
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #e0c1f5;
+  padding: 10px 12px;
+}
+.menu li a:hover{
+  background-color: #e4d2f0;
+}
+.checkbox:checked ~ .menu{
+  display: block;
+}
+
+
+
+
+
+
 
 .sepaCabCont{
   align-content: center;
-  margin-top: -15px;
-  width: 140%;
+  width: 100%;
+  margin-top: 5%;
 }
 .sepaCabCont .linea{
   background-color: black;
@@ -91,9 +148,6 @@ body{
   padding-bottom: 2%;
 }
 
-.pueblo1{
-  margin-top: 20%;
-}
 
 .Nombre_pueblo{
   font-family: "Tilt Warp", sans-serif;
@@ -113,7 +167,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-.tamaño_foto_pueblo{
+.tamano_foto_pueblo{
   width: 70vw;
   height: 50vw;
 
