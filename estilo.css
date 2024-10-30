@@ -19,11 +19,12 @@ body{
 }
 
 .cabecera{
+  width: 100%;
+  background-color: white;
+  position: fixed;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .Titulo{
@@ -37,6 +38,7 @@ body{
   font-family: "Ruslan Display", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 4%;
 }  
 
 .MenuIcono{
@@ -48,12 +50,30 @@ body{
 .iconMenu{
   width: 65%;
   align-content: center;
+  margin-right: 5%;
 }
+
 .sepaCabCont{
-  width: 100%;
   align-content: center;
+  margin-top: -15px;
+  width: 140%;
 }
 .sepaCabCont .linea{
+  background-color: black;
+  width: 95%;
+  height: 2px;
+  margin: auto;
+}
+
+
+
+.sepaCab{
+  width: 100%;
+  align-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.sepaCab .linea{
   background-color: black;
   width: 90%;
   height: 2px;
@@ -66,9 +86,15 @@ body{
   display: grid;
 }
 
-.first_pueblo{
-
+.puebloFondo{
+  background-color: #d9d9d962;
+  padding-bottom: 2%;
 }
+
+.pueblo1{
+  margin-top: 20%;
+}
+
 .Nombre_pueblo{
   font-family: "Tilt Warp", sans-serif;
   font-optical-sizing: auto;
@@ -82,10 +108,17 @@ body{
   text-align: center;
 }
 .img_pueblo{
+  display: flex;
   width: 100%;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.tamaño_foto_pueblo{
+  width: 70vw;
+  height: 50vw;
+
 }
 .img_pueblo img{
-  width: 60%;
-  height: 20%;
+  width: 100%;
+  height: 100%;
 }
