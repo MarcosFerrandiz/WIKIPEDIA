@@ -17,16 +17,7 @@ body{
   margin: 0;
   border: 0;
 }
-/*
-.cabecera{
-  width: 100%;
-  background-color: white;
-  position: fixed;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 5px;
-}
-*/
+
 .Titulo{
   align-content: center;
   width: 100%;
@@ -50,7 +41,7 @@ body{
 }
 .cabecera{
   background-color: white;
-  height: 48px;
+  height: 6vh;
   padding: 10px 12px;
   position: fixed;
   transition: 250ms;
@@ -95,7 +86,7 @@ body{
   color: black;
   display: block;
   background-color: #e0c1f5;
-  padding: 10px 12px;
+  padding: 25px 16px;
 }
 .menu li a:hover{
   background-color: #e4d2f0;
@@ -103,7 +94,6 @@ body{
 .checkbox:checked ~ .menu{
   display: block;
 }
-
 
 
 
@@ -143,6 +133,9 @@ body{
   display: grid;
 }
 
+.pueblo1{
+  margin-top: 19%;
+}
 .puebloFondo{
   background-color: #d9d9d962;
   padding-bottom: 2%;
